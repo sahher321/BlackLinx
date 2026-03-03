@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #4B4B4B;
+  --primary: #FF6200;
+  --secondary: #242427;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --font-sans: var(--font-neusanstrial), var(--font-geist-sans);
+  --font-poppins: var(--font-poppins), sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-float-up-down {
+    animation: floatUpDown 4s ease-in-out infinite;
+  }
+
+  .animate-float-down-up {
+    animation: floatDownUp 4s ease-in-out infinite;
+  }
+}
+
+@keyframes floatUpDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes floatDownUp {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-neusanstrial), var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
