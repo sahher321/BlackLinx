@@ -73,7 +73,7 @@ export default function Hero() {
                         data-aos="fade-up"
                         data-aos-delay="400"
                     >
-                        Get Start Free Today
+                        Get Started
                     </button>
                 </div>
 

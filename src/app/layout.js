@@ -64,7 +64,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${neuSansTrial.variable} ${poppins.variable} antialiased relative min-h-screen`}>
+      <body className={`${neuSansTrial.variable} ${poppins.variable} antialiased relative min-h-screen overflow-x-hidden`}>
         <AOSInit />
         {/* Global Background Image */}
         <div className="fixed inset-0 pointer-events-none z-[-1]">
