@@ -13,7 +13,7 @@ export default function About() {
                     <div className="relative w-full max-w-[400px] aspect-square rounded-4xl overflow-hidden drop-shadow-xl">
                         <Image
                             src={aboutImg}
-                            alt="About Black Linx"
+                            alt="About BlackLinx"
                             fill
                             className="object-cover"
                         />
@@ -29,7 +29,7 @@ export default function About() {
                         className="font-medium text-[#0F172B] tracking-tight mb-6 text-4xl sm:text-5xl md:text-[50px] leading-tight md:leading-[1.2]"
                         style={{ fontFamily: '"NeuSans Trial", sans-serif' }}
                     >
-                        About Black Linx
+                        About BlackLinx
                     </h2>
                     <p
                         className="font-normal text-[#4B4B4B] text-base sm:text-lg md:text-[20px] leading-relaxed md:leading-[1.6]"
